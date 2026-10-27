@@ -14,3 +14,8 @@ SEMJS is a full-stack Web application developed with ASP.NET Core C# and Entity 
 - **Rule-Based Matching Engine (`MatchEngine.cs`)**: Automated matching algorithm calculating candidate suitability scores based on required job skills vs. student profile interests.
 - **Dynamic Resume & Skill Extraction**: Automated parsing of student skills (`ResumeSkillExtractor.cs`) and dynamic portfolio items generation.
 - **Full Database Migrations**: Normalized relational schema implemented via EF Core Code-First (`ApplicationDbContext`), supporting student activities, application messages, and skill catalogues.
+
+## Core Code Architecture
+- `Models/`: Entity definitions (`Student.cs`, `Employer.cs`, `Job.cs`, `Application.cs`, etc.)
+- `Services/`: Business & algorithmic logic (`MatchEngine.cs`, `ResumeSkillExtractor.cs`, `JobSkillResolver.cs`)
+- `Pages/`: Interactive Razor Pages handling Student applications, Employer job posts, and Admin dashboards.
